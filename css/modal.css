@@ -1,0 +1,76 @@
+
+#modal{
+  position : absolute;
+  z-index : 1000;
+  /*display : none;*/
+  background-color : rgba(0,0,0,0.6);
+  -moz-border-radius : 20px;
+  border-radius : 20px;
+  padding : 10px;
+  width : 320px;
+  height : 150px;
+  color : white;
+  border : 4px solid white;
+}
+#modal button{
+  width : 80px;
+}
+#modalContent{
+  position : relative;
+  padding-left : 20px;
+  padding-top : 20px;
+}
+#modalTitle{
+  text-align : center;
+  font-style : bold;
+  font-size : 14px;
+  padding-top : 4px;
+}
+#newDialogue{
+  padding-right: 20px;
+  
+}
+ 
+.smallbr{
+  font-size : 3px;
+}
+zdiv{
+  border : 1px solid red; 
+}
+#filename{
+  width : 130px;
+}
+.saveCancel{
+  position : absolute;
+  left : 130px;
+  top : 105px;
+  width : 200px;
+}
+.saveCancel button{
+  float : left; 
+  
+  margin-left : 10px;
+}
+#ok{
+  float : right;
+  
+  margin-top : 25px;
+  margin-left : 10px;
+}
+.left{
+  position : relative;
+  float : left;
+}
+
+.right{
+  position : relative;
+  float : right;
+}
+#templates{
+  margin-right : 10px; 
+}
+
+#findReplaceBtns{
+  margin-top : -3px;
+  margin-left : 50px;
+}
