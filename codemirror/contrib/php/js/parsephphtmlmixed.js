@@ -52,13 +52,14 @@ var PHPHTMLMixedParser = Editor.Parser = (function() {
           
         if (inTag == "script/php")
           iter.next = local(PHPParser, "</script>");//, console.log("one")
+        else if (inTag == "style")
+          iter.next = local(CSSParser, "</");//, console.log("style");
         else if (inTag == "script")
           //iter.next = local(XMLParser, "</script");
-          if (!isTextHtml) 
-            iter.next = local(JSParser, "</"), console.log(isTextHtml)
-        else if (inTag == "style")
-          
-          iter.next = local(CSSParser, "</");//, console.log("style");
+          if (!isTextHtml) iter.next = local(JSParser, "</");
+        
+        
+        
         lastAtt = null;
         isTextHtml = null;
         inTag = false;
