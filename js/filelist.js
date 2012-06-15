@@ -248,7 +248,7 @@ z.FileList = function() {
     });
   }).live("mouseout", function(e) {
     $(this).children("span").first().css({
-      color: "black"
+      color: "#ccc"
     });
   });
 

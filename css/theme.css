@@ -1,0 +1,73 @@
+body,html{
+  background-color : #555;
+  color : #ccc; 
+  -moz-text-shadow : 1px 1px 1px rgba(0,0,0,0.5);
+  -o-text-shadow : 1px 1px 1px rgba(0,0,0,0.5);
+  -webkit-text-shadow : 1px 1px 1px rgba(0,0,0,0.5);
+  text-shadow : 1px 1px 1px rgba(0,0,0,0.5);
+}
+a, a:visited{
+  color : #ccc;
+}
+a:hover{
+  color : #87c1fa; 
+}
+
+li{
+ border-top : 1px solid #666;
+ border-bottom : 1px solid #444;
+ padding-top : 4px;
+ padding-bottom : 4px;
+}
+li:first-child{
+ border-top : none; 
+}
+li:last-child{
+ border-bottom : none;
+}
+#docMenu{
+ -moz-box-shadow : 0px 0px 10px rgba(0,0,0,0.5); 
+ -o-box-shadow : 0px 0px 10px rgba(0,0,0,0.5); 
+ -webkit-box-shadow : 0px 0px 10px rgba(0,0,0,0.5); 
+ box-shadow : 0px 0px 10px rgba(0,0,0,0.5); 
+}
+
+#docMenu,#docMenu li{
+ background-color : #666; 
+}
+
+#docMenu li:hover{
+  color : #87c1fa;
+}
+#docMenu li:hover{
+  background-color : #333 !important;
+}
+
+.CodeMirror-wrapping iframe{
+  background : white; 
+}
+.CodeMirror-wrapping{
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.5) inset !important;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5) inset !important;
+}
+.CodeMirror-wrapping iframe{
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.5) inset !important;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5) inset !important;
+}
+
+#fileName{
+  background-color : #444;
+}
+
+.CodeMirror-line-numbers {
+  color: #AAA;
+  text-align: right;
+  font-size: 10pt;
+  font-family: monospace;
+  background-color : #666;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+  overflow : hidden;
+}
+#previewFrame{
+ background-color : white; 
+}
