@@ -583,7 +583,7 @@ var zen_settings = {
           '  <style>\n' + 
           '  </style>\n' +
           '</head>\n' +
-          '<body>\n\t${child}|\n</body>\n' +
+          '<body>\n\t|\n</body>\n' +
           '</html>',
           
       'z:jquery': '<!DOCTYPE html>\n' +
@@ -598,8 +598,32 @@ var zen_settings = {
           '    <style>\n' +
           '    </style>\n' +
           '  </head>\n' +
-          '  <body>\n\t${child}|\n  </body>\n' +
-          '</html>'      
+          '  <body>\n|\n  </body>\n' +
+          '</html>', 
+      
+      'z:box': '<!DOCTYPE html>\n' +
+          '<html lang="en">\n' +
+          '  <head>\n' +
+          '    <meta charset="utf-8" />\n' +
+          '    <title></title>\n' +
+          '    <script src="http://code.jquery.com/jquery-latest.min.js"></script>\n' +
+          '    <script>\n' +
+          '     \\$(function()\\{\n\n\n     });\n' +
+          '    </script>\n' +
+          '    <style>\n' +
+          '      #box\\{\n' +
+      '        position : absolute;\n' +
+      '        left : 50px;\n' + 
+      '        top : 50px;\n' + 
+      '        width : 100px;\n' + 
+      '        height : 100px;\n' + 
+      '        background-color : red;\n' + 
+          '      \\}\n' +
+          '    </style>\n' +
+          '  </head>\n' +
+          '  <body>\n    <div id="box"></div>\n  </body>\n' +
+          '</html>', 
+      
     
     },
     
