@@ -46,11 +46,10 @@ li:last-child{
 .CodeMirror-wrapping iframe{
   background : white; 
 }
-.CodeMirror-wrapping{
-  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.5) inset !important;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.5) inset !important;
-}
+
 .CodeMirror-wrapping iframe{
+  -o-box-shadow: 0px 0px 10px rgba(0,0,0,0.5) inset !important;
+  -moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.5) inset !important;
   -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.5) inset !important;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.5) inset !important;
 }
@@ -65,7 +64,6 @@ li:last-child{
   font-size: 10pt;
   font-family: monospace;
   background-color : #666;
-  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
   overflow : hidden;
 }
 #previewFrame{

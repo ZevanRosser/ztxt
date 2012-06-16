@@ -623,7 +623,7 @@ var zen_settings = {
       'meta:win': '<meta http-equiv="Content-Type" content="text/html;charset=windows-1251" />',
       'meta:compat': '<meta http-equiv="X-UA-Compatible" content="IE=7" />',
       'style': '<style>',
-      'script': '<script>',
+      'script': '<script src="|"></script>',
       'script:src': '<script src="">',
       'img': '<img src="" alt="" />',
       'iframe': '<iframe src="" frameborder="0">',
