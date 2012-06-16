@@ -69,3 +69,51 @@ li:last-child{
 #previewFrame{
  background-color : white; 
 }
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track{
+   background-color : #999;
+   -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.5); 
+}
+ 
+::-webkit-scrollbar-thumb {
+    background-color : #444;
+    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.5); 
+}
+
+select {
+  -webkit-appearance : none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius : 4px;
+  -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2),
+    inset 0 0 10px rgba(0,0,0,0.2); 
+  -webkit-padding-end: 20px;
+  -webkit-padding-start: 4px;
+  outline : none;
+  -webkit-user-select: none;
+  background-color : #aaa;
+  border : 2px solid rgba(255,255,255,0.2);;
+  color: #333;
+  background-image: url(../images/down-arrow.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-shadow : 1px 1px 1px rgba(255,255,255,0.2);
+}
+
+#fontSize{
+  margin-top : -4px;
+  width : 55px;
+}
+
+
+
+

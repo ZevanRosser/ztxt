@@ -625,7 +625,7 @@ var zen_settings = {
           '</html>', 
      
     'forj' : 'for (var i = 0; i < |; i++)\\{\n  \n\\}\n',
-    'forp' : 'for ($i = 0; $i < |; $i++)\\{\n  \n\\}\n', 
+    'forp' : 'for (\\$i = 0; \\$i < |; \\$i++)\\{\n  \n\\}\n', 
       'if' : 'if (|)\\{\n  \n\\}\n',
       'func' : 'function |()\\{\n  \n\\}\n'
   
