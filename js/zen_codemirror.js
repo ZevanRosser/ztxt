@@ -623,7 +623,12 @@ var zen_settings = {
           '  </head>\n' +
           '  <body>\n    <div id="box"></div>\n  </body>\n' +
           '</html>', 
-      
+     
+    'forj' : 'for (var i = 0; i < |; i++)\\{\n  \n\\}\n',
+    'forp' : 'for ($i = 0; $i < |; $i++)\\{\n  \n\\}\n', 
+      'if' : 'if (|)\\{\n  \n\\}\n',
+      'func' : 'function |()\\{\n  \n\\}\n'
+  
     
     },
     
@@ -796,7 +801,9 @@ var zen_settings = {
   'haml': {
     'filters': 'haml',
     'extends': 'html'
-  }
+  }, 
+  
+ 
 };/**
  * Parsed resources (snippets, abbreviations, variables, etc.) for Zen Coding.
  * Contains convenient method to get access for snippets with respect of 
