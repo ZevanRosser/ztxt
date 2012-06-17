@@ -45,7 +45,7 @@ z.CodeWin = function() {
     setTimeout(function(){
       z.previewFrame.attr("src", "splash.html");
     }, 100);
-    window.open(z.visualPreview);
+    window.open("test-in-tab.php?p=" + z.visualPreview);
     
     
   });
