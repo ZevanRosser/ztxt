@@ -83,7 +83,7 @@ z.DragCols = function() {
         height: "100%",
         backgroundColor: "#aaa",
         borderRight: "1px solid #666",
-        cursor: "pointer"
+        cursor: "ew-resize"
       }
     });
     return drag;

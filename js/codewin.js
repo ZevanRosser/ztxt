@@ -42,8 +42,12 @@ z.CodeWin = function() {
   $("#testInTab").mousedown(function() {
     z.saveFileFolder();
   }).mouseup(function() {
+    setTimeout(function(){
+      z.previewFrame.attr("src", "splash.html");
+    }, 100);
     window.open(z.visualPreview);
-    z.previewFrame.attr("src", "splash.html");
+    
+    
   });
 
   $("#newBtn").click(function() {

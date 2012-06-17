@@ -188,5 +188,7 @@ $(function() {
   z.dragCols = new z.DragCols();
   z.fileList = new z.FileList();
   z.codeWin = new z.CodeWin();
+  
+  z.body.on("selectstart", function(){return false;});
 
 });
