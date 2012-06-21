@@ -1,9 +1,11 @@
 #Installing
+-----------
 
 To get up and running with the ztxt editor. 
 [Watch this video.](http://zreference.com/ztxt-code-editor/)  
 
 #Zen Coding:
+------------
 
 ##file template shortcodes  
 Type any of the following followed by a tab:  
