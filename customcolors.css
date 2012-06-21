@@ -1,6 +1,13 @@
 body,html{
  background-color : #333; 
 }
+
+/* comments should look the same everywhere */
+span.xml-comment, span.css-comment, span.js-comment, span.php-comment {
+  color: #ff6145;
+}
+
+
 /* xml colors */
 span.xml-doctype{
   color : #bacfe3;
@@ -19,10 +26,6 @@ span.xml-punctuation {
 
 span.xml-attname {
   color: #97c79d;
-}
-
-span.xml-comment {
-  color: #ded08c;
 }
 
 span.xml-cdata {
@@ -78,12 +81,11 @@ span.css-colorcode {
   color: #a1a3f5;
 }
 
-span.css-comment {
-  color: #ded08c;
-}
-
 span.css-string {
   color: #b2cbde;
+}
+span.css-select-op{
+  color : #ccc; 
 }
 
 /* js colors */
@@ -117,10 +119,6 @@ span.js-localvariable {
 
 span.js-property {
   color: #97c79d;
-}
-
-span.js-comment {
-  color: #AA7700;
 }
 
 span.js-string {
@@ -180,19 +178,13 @@ span.php-t_string {
 }
 
 span.php-variable {
-  color: #ccba82;
+  color: #7e9fc2;
   font-weight: bold;
 }
 
 
 span.js-localvariable {
   color: #ccba82;
-}
-
-span.php-comment {
-  color: #ded08c;
-  font-stretch: condensed;
-/*  font-style: italic;  This causes line height to slightly change, getting line numbers out of sync */
 }
 
 span.php-string-single-quoted {
