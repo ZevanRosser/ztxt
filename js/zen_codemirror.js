@@ -5740,12 +5740,12 @@ var zen_editor = (function(){
   addShortcut('Meta+K', 'Remove Tag');
   addShortcut('Meta+Y', 'Evaluate Math Expression');
   
-  addShortcut('Ctrl+UP', 'Increment number by 1');
-  addShortcut('Ctrl+DOWN', 'Decrement number by 1');
+  addShortcut('Shift+UP', 'Increment number by 1');
+  addShortcut('Shift+DOWN', 'Decrement number by 1');
   addShortcut('Alt+UP', 'Increment number by 0.1');
   addShortcut('Alt+DOWN', 'Decrement number by 0.1');
-  addShortcut('Ctrl+Alt+UP', 'Increment number by 10');
-  addShortcut('Ctrl+Alt+DOWN', 'Decrement number by 10');
+  addShortcut('Shift+Alt+UP', 'Increment number by 10');
+  addShortcut('Shift+Alt+DOWN', 'Decrement number by 10');
   
   addShortcut('Meta+.', 'Select Next Item');
   addShortcut('Meta+,', 'Select Previous Item');
