@@ -29,7 +29,7 @@ li{
 #codeUI{
   position : relative;
   height : 65px; 
-  min-width : 570px;
+  min-width : 600px;
   overflow : hidden;
 }
 #codeUI a{
@@ -216,4 +216,10 @@ button:hover{
   margin-top : 3px;
   margin-left : -2px;
 } 
+
+#customColors{
+ margin-top : -1px;
+ border : none !important;
+ margin-left : 8px; 
+}
 

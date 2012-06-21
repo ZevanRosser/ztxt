@@ -60,6 +60,7 @@
             </select>
             
             <div id="color" style="display:inline"><div style="background-color: #000000"></div></div>
+            <a id="customColors" href="#">&#x25c9</a>
           </div>
           <div class="right">
             

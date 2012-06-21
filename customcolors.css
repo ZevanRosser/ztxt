@@ -1,0 +1,214 @@
+body,html{
+ background-color : #333; 
+}
+/* xml colors */
+span.xml-doctype{
+  color : #bacfe3;
+}
+span.xml-tagname {
+  color: #7e9fc2;
+}
+
+span.xml-attribute {
+  color: #d5b3e6;
+}
+
+span.xml-punctuation {
+  color: #baaa7b;
+}
+
+span.xml-attname {
+  color: #97c79d;
+}
+
+span.xml-comment {
+  color: #ded08c;
+}
+
+span.xml-cdata {
+  color: #e09775;
+}
+
+span.xml-processing {
+  color: white;
+}
+
+span.xml-entity {
+  color: #a5b6c7;
+}
+
+span.xml-error {
+ color: #F00 !important;
+ font-weight : bold !important;
+}
+
+span.xml-text {
+  color: #a5b6c7;
+}
+
+/* css colors */
+span.css-punctuation{
+  color: #cccccc;
+}
+span.css-at {
+  color: #e0b177;
+}
+
+span.css-unit {
+  color: #a5b6c7;
+}
+
+span.css-value {
+  color: #a5b6c7;
+}
+
+span.css-identifier {
+  color: #7e9fc2;
+}
+
+span.css-selector {
+  color: #e09377;
+}
+
+span.css-important {
+  color: white;
+}
+
+span.css-colorcode {
+  color: #a1a3f5;
+}
+
+span.css-comment {
+  color: #ded08c;
+}
+
+span.css-string {
+  color: #b2cbde;
+}
+
+/* js colors */
+span.js-punctuation {
+  color: #cccccc;
+}
+
+span.js-operator {
+  color: #cccccc;
+}
+
+span.js-keyword {
+  color: #72b2f2;
+}
+
+span.js-atom {
+  color: #bcc5cc;
+}
+
+span.js-variable {
+  color: #cccccc;
+}
+
+span.js-variabledef {
+  color: #97c79d;
+}
+
+span.js-localvariable {
+  color: #97c79d;
+}
+
+span.js-property {
+  color: #97c79d;
+}
+
+span.js-comment {
+  color: #AA7700;
+}
+
+span.js-string {
+  color: #E09377;
+}
+
+
+/* php colors 7e9fc2*/
+span.php-punctuation {
+  color: #cccccc;
+}
+
+span.php-keyword {
+  color: #91afb8;
+  font-weight: bold;
+}
+
+span.php-operator {
+  color: white;
+}
+
+/* __FILE__ etc.; http://php.net/manual/en/reserved.php */
+span.php-compile-time-constant {
+  color: #cccccc;
+  font-weight: bold;
+}
+
+/* output of get_defined_constants(). Differs from http://php.net/manual/en/reserved.constants.php */
+span.php-predefined-constant {
+  color: #91b89d;
+  font-weight: bold;
+}
+
+/* PHP reserved "language constructs"... echo() etc.; http://php.net/manual/en/reserved.php */
+span.php-reserved-language-construct {
+  color: #91b89d;
+  font-weight: bold;
+}
+
+/* PHP built-in functions: glob(), chr() etc.; output of get_defined_functions()["internal"] */
+span.php-predefined-function {
+  color: #91b89d;
+}
+
+/* PHP predefined classes: PDO, Exception etc.; output of get_declared_classes() and different from http://php.net/manual/en/reserved.classes.php */
+span.php-predefined-class {
+  color: #91b89d;
+}
+
+span.php-atom {
+  color: white;
+}
+
+/* class, interface, namespace or function names, but not $variables */
+span.php-t_string {
+  color: #ccc;
+}
+
+span.php-variable {
+  color: #ccba82;
+  font-weight: bold;
+}
+
+
+span.js-localvariable {
+  color: #ccba82;
+}
+
+span.php-comment {
+  color: #ded08c;
+  font-stretch: condensed;
+/*  font-style: italic;  This causes line height to slightly change, getting line numbers out of sync */
+}
+
+span.php-string-single-quoted {
+  color: #eb8375;
+}
+/* double quoted strings allow interpolation */
+span.php-string-double-quoted {
+  color: #eb8375;
+  font-weight: bold;
+}
+
+span.syntax-error {
+  background-color: red;
+}
+
+span.deprecated {
+  font-size: smaller;
+}
+

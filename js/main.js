@@ -66,8 +66,8 @@ $(function() {
     zIndex: 100
   }).hide();
 
-  // the code mirror instance
-  z.editor = CodeMirror.fromTextArea('code', {
+  
+  var editorOptions = {
     height: "100%",
 
     parserfile: ["parsexml.js", "parsecss.js", "tokenizejavascript.js", "parsejavascript.js", "../contrib/php/js/tokenizephp.js", "../contrib/php/js/parsephp.js", "../contrib/php/js/parsephphtmlmixed.js"],
@@ -81,7 +81,30 @@ $(function() {
     onLoad: function(editor) {
       zen_editor.bind(editor);
     }
+  };
+  
+  var customColors = $("#customColors");
+  
+  if (localStorage.ztxtCustomColors == "yes"){
+    customColors.css({color : "#ebd770"});
+    editorOptions.stylesheet.push("customcolors.css");
+  }
+  
+  customColors.click(function(){
+    if (localStorage.ztxtCustomColors == "yes"){
+      localStorage.ztxtCustomColors = "no";
+    }else{
+      localStorage.ztxtCustomColors = "yes";
+    }
+    console.log(localStorage.ztxtCustomColors);
+    window.location.href = "/ztxt";
   });
+  
+  // the code mirror instance
+  z.editor = CodeMirror.fromTextArea('code', editorOptions);
+  
+  
+  
 
 
   // hide the docMenu when the code iframe is clicked

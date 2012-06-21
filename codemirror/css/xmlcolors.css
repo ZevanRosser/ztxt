@@ -2,6 +2,10 @@ html {
   cursor: text;
 }
 
+html,body{
+  background-color : white; 
+}
+
 .editbox {
   margin: .4em;
   padding: 0;
