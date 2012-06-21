@@ -1,13 +1,10 @@
 
-ZEN CODING:
+#Zen Coding:
 
-// file template shortcodes
-
-z:html = standard html5 document
-
+##file template shortcodes  
+>z:html = standard html5 document  
 z:jquery = html5 document that includes latest version of jquery
-
-z:box = html5/jquery with a red absolutely positioned box for demos
+z:box = html5/jquery with a red absolutely positioned box for dem
 
 
 // zen coding default shortcuts
