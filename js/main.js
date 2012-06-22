@@ -114,6 +114,29 @@ $(function() {
     z.docMenu.hide();
     z.hideColorPicker();
   });
+  
+  z.cssSwatch = $("<div>", {
+    css : {
+      position : "relative",
+      float : "left",
+      marginTop : -3,
+      marginLeft : -9,
+      width : 20,
+      height : 20,
+      zIndex : 10000,
+      backgroundColor : "gray",
+      borderRadius : 10
+    }
+  }).appendTo("#uiContent .left");
+  
+  console.log(z.cssSwatch);
+  
+  z.codeIframe.on("mouseover", "span.css-colorcode, span.css-value", function(e){
+    console.log($(this));
+    z.cssSwatch.css({
+      backgroundColor : $(this).text()
+    });
+  });
 
   // update some elements on resize
   z.win.resize(function() {
