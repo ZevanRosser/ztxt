@@ -96,7 +96,7 @@ $(function() {
     }else{
       localStorage.ztxtCustomColors = "yes";
     }
-    console.log(localStorage.ztxtCustomColors);
+    //console.log(localStorage.ztxtCustomColors);
     window.location.href = "/ztxt";
   });
   
@@ -129,10 +129,10 @@ $(function() {
     }
   }).appendTo("#uiContent .left");
   
-  console.log(z.cssSwatch);
+ // console.log(z.cssSwatch);
   
   z.codeIframe.on("mouseover", "span.css-colorcode, span.css-value", function(e){
-    console.log($(this));
+   // console.log($(this));
     z.cssSwatch.css({
       backgroundColor : $(this).text()
     });
