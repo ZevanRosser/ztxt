@@ -29,7 +29,7 @@ li{
 #codeUI{
   position : relative;
   height : 65px; 
-  min-width : 600px;
+  min-width : 630px;
   overflow : hidden;
 }
 #codeUI a{

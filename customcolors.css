@@ -2,6 +2,9 @@ body,html{
  background-color : #333; 
 }
 
+pre.code, .editbox {
+  color: white;
+}
 /* comments should look the same everywhere */
 span.xml-comment, span.css-comment, span.js-comment, span.php-comment {
   color: #ff6145;
