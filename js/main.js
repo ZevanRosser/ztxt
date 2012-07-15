@@ -225,6 +225,7 @@ $(function() {
     $.post("save.php", data, function(data) {
       z.updatePreview();
       callback();
+      
     });
   };
 

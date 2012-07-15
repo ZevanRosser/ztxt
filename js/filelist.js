@@ -1,13 +1,13 @@
 z.FileList = function() {
   var f = this;
 
-   f.load = function(dir) {
+  f.load = function(dir) {
     z.files.html("loading...");
     $.post("file_list.php", {
       dir: dir
     }, renderList);
   };
-  
+
   function updateTopFolders() {
     $.get("top_folder_list.php", function(data) {
       z.topFolder.html(data).attr("disabled", false);
@@ -91,7 +91,6 @@ z.FileList = function() {
 
       //z.currentPath = "";
 
-
       z.modals.show("newDocument");
 
     } else if (method == "Delete") {
@@ -112,7 +111,7 @@ z.FileList = function() {
         $.post("delete.php", {
           name: actionFile.attr("data-path")
         });
-        
+
       }
 
     } else if (method == "Rename") {
@@ -146,14 +145,22 @@ z.FileList = function() {
           } else {
             z.codeIframe.scrollTop(0);
           }
+          z.overlay.hide();
         }
       });
     } else if (name.match(z.imageTypes)) {
       z.codeBorder.hide();
       z.currentPath = undefined;
       z.previewFrame.attr("src", name);
+      setTimeout(function(){
+        z.overlay.hide();
+      },100);
+      
     } else {
       alert(name + "\nSorry ztxt doesn't work with that kind of file.");
+      setTimeout(function(){
+        z.overlay.hide();
+      },100);
     }
   }
 
@@ -179,6 +186,8 @@ z.FileList = function() {
 
   function itemClick(e) {
 
+    
+
     var curr = e.target;
     if (curr.tagName == "SPAN") {
       curr = $(curr).parent();
@@ -188,8 +197,11 @@ z.FileList = function() {
 
     e.stopPropagation();
 
-    if (curr == currFile) {
-      return;
+    if (currFile) {
+      if (curr[0] == currFile[0]) {
+        z.overlay.hide();
+        return;
+      }
     }
 
 
@@ -215,11 +227,12 @@ z.FileList = function() {
       var path = curr.attr("data-path");
       var ext = curr.attr("data-ext");
 
+      //z.overlay.show();
       scrollMemory[z.currentPath] = z.codeIframe.scrollTop();
 
       loadFile(path);
 
-
+      z.overlay.show();
 
       codeHighlight(ext);
     } else if (curr.hasClass("directory")) {
@@ -263,6 +276,6 @@ z.FileList = function() {
 
 
 
- 
+
 
 };
