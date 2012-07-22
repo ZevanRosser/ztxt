@@ -10,11 +10,11 @@ To get up and running with the ztxt editor.
 ##file template shortcodes  
 Type any of the following followed by a tab:  
     z:html = standard html5 document  
-    z:jquery = html5 document that includes latest version of jquery
-    z:box = html5/jquery with a red absolutely positioned box for dem
-    php = a php tag
-    forj = a javascript for loop
-    forp = a php for loop
+    z:jquery = html5 document that includes latest version of jquery  
+    z:box = html5/jquery with a red absolutely positioned box for demos  
+    php = a php tag  
+    forj = a javascript for loop  
+    forp = a php for loop  
 
 
 ##default shortcuts
