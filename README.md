@@ -16,6 +16,9 @@ Type any of the following followed by a tab:
     forj = a javascript for loop  
     forp = a php for loop  
 
+[read more about zen coding here...](https://github.com/sergeche/zen-coding/)
+
+
 
 ##default shortcuts
     Meta+E = Expand Abbreviation;
