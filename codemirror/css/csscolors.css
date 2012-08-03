@@ -9,10 +9,6 @@ html {
   font-size: 10pt;
   color: black;
 }
-.editbox{
-  margin : 0px;
-  padding : 8px;
-}
 
 pre.code, .editbox {
   color: #666;
@@ -25,6 +21,7 @@ pre.code, .editbox {
 span.css-at {
   color: #708;
 }
+
 span.css-unit {
   color: #281;
 }

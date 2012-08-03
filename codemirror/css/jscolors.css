@@ -9,10 +9,6 @@ html {
   font-size: 10pt;
   color: black;
 }
-.editbox{
-  margin : 0px;
-  padding : 8px;
-}
 
 pre.code, .editbox {
   color: #666666;

@@ -9,6 +9,10 @@ pre.code, .editbox {
 span.xml-comment, span.css-comment, span.js-comment, span.php-comment {
   color: #ff6145;
 }
+  
+.text{
+  color : white !important;  
+}
 
 
 /* xml colors */

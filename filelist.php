@@ -28,7 +28,7 @@ showContents($files, $dir, $data);
 print_r($d);
 echo "</pre>";*/
 
-echo "<ul id='documentList'>";
+echo "<ul id='fileList'>";
 toList($data);
 echo "</ul>";
 
@@ -56,7 +56,7 @@ function showContents($folder, $name, &$data){
   }
   if (count($dirs) > 0){
     foreach ($dirs as $dir){
-       $files = array_merge(glob("$dir/.htaccess"), glob("$dir/.htpasswd"));
+      $files = array_merge(glob("$dir/.htaccess"), glob("$dir/.htpasswd"));
        $files = array_merge(glob("$dir/*"), $files);
       showContents($files, $dir, $data[$n]);
     }
@@ -95,7 +95,7 @@ function toList($multi_dimensional_array){
                   $top++;
           }else{
             $ext = splitLast($key,"/\./");
-            echo '<li class="ext_'.$ext.' file" data-path="'.$path.'" data-ext="'.$ext.'"><span data-path="'.$path.'">'.$key.'</span>';
+            echo '<li class="ext_'.$ext.' isFile" data-path="'.$path.'" data-ext="'.$ext.'"><span data-path="'.$path.'">'.$key.'</span>';
           }
           echo '</li>';
           $i++;

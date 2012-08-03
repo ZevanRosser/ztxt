@@ -3,7 +3,7 @@ $(function() {
 
   z.editableTypes = /.html$|.htm$|.xml$|.csv$|.txt$|.md$|.sql$|.php$|.js$|.json$|css$|.htpasswd$|.htaccess$/;
 
-  z.visualTypes = /.html$|.htm$|.php$/;
+  z.visualTypes = /.html$|.htm$|.php$|\.bc\.php$/;
 
   z.imageTypes = /.jpg$|.jpeg$|.gif$|.png$/;
 
@@ -70,8 +70,8 @@ $(function() {
   var editorOptions = {
     height: "100%",
 
-    parserfile: ["parsexml.js", "parsecss.js", "tokenizejavascript.js", "parsejavascript.js", "../contrib/php/js/tokenizephp.js", "../contrib/php/js/parsephp.js", "../contrib/php/js/parsephphtmlmixed.js"],
-    stylesheet: ["codemirror/css/xmlcolors.css", "codemirror/css/csscolors.css", "codemirror/contrib/php/css/phpcolors.css", "codemirror/css/jscolors.css"],
+    parserfile: ["parsexml.js", "parsecss.js", "tokenizejavascript.js", "parsejavascript.js", "../contrib/php/js/tokenizephp.js", "parsedummy.js", "../contrib/php/js/parsephp.js", "../contrib/php/js/parsephphtmlmixed.js"],
+    stylesheet: ["codemirror/css/bccolors.css","codemirror/css/xmlcolors.css", "codemirror/css/csscolors.css", "codemirror/contrib/php/css/phpcolors.css", "codemirror/css/jscolors.css"],
     path: "codemirror/js/",
     autoMatchParens: true,
     lineNumbers: true,

@@ -573,6 +573,10 @@ var zen_settings = {
       ':p' : '<?php\n\n${child}|'
       
       ,
+      ':bc' : '<?php \n' +
+      'exec("echo \'" . file_get_contents("|.bc.php") . "\' | bc -l", \\$out); \n' +
+      'echo "<pre>" . stripslashes(join(\\$out)); \n' + 
+      '?>',
       'z:html': '<!DOCTYPE html>\n' +
           '<html lang="en">\n' +
           '<head>\n' +

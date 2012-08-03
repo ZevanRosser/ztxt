@@ -90,7 +90,6 @@ z.FileList = function() {
     if (method == "New Document") {
 
       //z.currentPath = "";
-
       z.modals.show("newDocument");
 
     } else if (method == "Delete") {
@@ -152,22 +151,25 @@ z.FileList = function() {
       z.codeBorder.hide();
       z.currentPath = undefined;
       z.previewFrame.attr("src", name);
-      setTimeout(function(){
+      setTimeout(function() {
         z.overlay.hide();
-      },100);
-      
+      }, 100);
+
     } else {
       alert(name + "\nSorry ztxt doesn't work with that kind of file.");
-      setTimeout(function(){
+      setTimeout(function() {
         z.overlay.hide();
-      },100);
+      }, 100);
     }
   }
 
-  // think about using sql highlighter
+
 
   function codeHighlight(ext) {
 
+    if (z.currentPath.match(/-bc\.php/)){
+      z.editor.setParser("DummyParser");
+    }else
     if (ext == "php" || ext == "html" || ext == "htm" || ext == "xml" || ext == "txt" || ext == "csv") {
       z.editor.setParser("PHPHTMLMixedParser");
     } else if (ext == "js" || ext == "json") {
@@ -176,6 +178,7 @@ z.FileList = function() {
     } else if (ext == "css") {
       z.editor.setParser("CSSParser");
     } else {
+
       // z.editor.setParser("");
     }
   }
@@ -186,7 +189,7 @@ z.FileList = function() {
 
   function itemClick(e) {
 
-    
+
 
     var curr = e.target;
     if (curr.tagName == "SPAN") {

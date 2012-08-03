@@ -11,7 +11,10 @@
 
     <script src="codemirror/js/codemirror.js" ></script> 
     <script src="codemirror/js/mirrorframe.js" ></script> 
+    
+    
     <script src="js/zen_codemirror.js"></script>
+    
     <script src="js/beautify.js" ></script> 
     
     <script src="js/jquery.min.js"></script>

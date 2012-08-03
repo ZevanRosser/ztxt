@@ -1,5 +1,5 @@
 var HTMLMixedParser = Editor.Parser = (function() {
-  
+
   // tags that trigger seperate parsers
   var triggers = {
     "script": "JSParser",
@@ -28,7 +28,6 @@ var HTMLMixedParser = Editor.Parser = (function() {
         inTag = token.content.toLowerCase();
       else if (token.content == ">") {
         if (triggers[inTag]) {
-          //console.log("bop", triggers[inTag]);
           var parser = window[triggers[inTag]];
           iter.next = local(parser, "</" + inTag);
         }
