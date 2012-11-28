@@ -1,5 +1,6 @@
 window.custom_zen = {
   
-  "f" : "<form>\n</form>"
+  "f" : "<form>\n</form>", 
+  "test" : "this is a test"
   
 };
