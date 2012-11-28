@@ -18,20 +18,25 @@ var PHPHTMLMixedParser = Editor.Parser = (function() {
   function parseMixed(stream) {
     
     var htmlParser = XMLParser.make(stream), localParser = null,
-        inTag = false, lastAtt = null, phpParserState = null;
+        inTag = false, lastAtt = null, phpParserState = null, 
+        isTextHtml = null;
     var iter = {next: top, copy: copy};
 
     function top() {
      
       var token = htmlParser.next();
+      
       //console.log(token.content, token.style, token.type);
-      if (token.content == "<")
+      if (token.content == '"text/html"')
+        isTextHtml = true;
+      else if (token.content == "<")
         inTag = true;
       else if (token.style == "xml-tagname" && inTag === true)
         inTag = token.content.toLowerCase();
       else if (token.style == "xml-attname")
-        lastAtt = token.content;
+        lastAtt = token.content
       else if (token.type == "xml-processing") {
+        
         // see if this opens a PHP block
         for (var i = 0; i < processingInstructions.length; i++)
           if (processingInstructions[i] == token.content) {
@@ -47,13 +52,16 @@ var PHPHTMLMixedParser = Editor.Parser = (function() {
           
         if (inTag == "script/php")
           iter.next = local(PHPParser, "</script>");//, console.log("one")
+        else if (inTag == "style")
+          iter.next = local(CSSParser, "</");//, console.log("style");
         else if (inTag == "script")
           //iter.next = local(XMLParser, "</script");
-          iter.next = local(JSParser, "</");//, console.log("two")
-        else if (inTag == "style")
-          
-          iter.next = local(CSSParser, "</");//, console.log("style");
+          if (!isTextHtml) iter.next = local(JSParser, "</");
+        
+        
+        
         lastAtt = null;
+        isTextHtml = null;
         inTag = false;
       }
       

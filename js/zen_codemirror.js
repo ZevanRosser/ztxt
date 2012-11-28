@@ -500,7 +500,7 @@ var zen_settings = {
       "wid": "widows:|;"
     }
   },
-  
+ 
   'html': {
     'filters': 'html',
     'snippets': {
@@ -808,7 +808,15 @@ var zen_settings = {
   }, 
   
  
-};/**
+};
+  
+  for(var i in window.custom_zen){
+    zen_settings["html"]["snippets"][i] = window.custom_zen[i];
+  }
+  //console.log(zen_settings["html"]["bob"]);
+//console.log(window.custom_zen);
+  
+/**
  * Parsed resources (snippets, abbreviations, variables, etc.) for Zen Coding.
  * Contains convenient method to get access for snippets with respect of 
  * inheritance. Also provides abilitity to store data in different vocabularies
@@ -1049,6 +1057,7 @@ var zen_resources = (function(){
      * @param {String} type Vocabulary type ('system' or 'user')
      */
     setVocabulary: function(data, type) {
+      
       if (type == VOC_SYSTEM)
         system_settings = data;
       else

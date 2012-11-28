@@ -401,12 +401,12 @@ var PHPParser = Editor.Parser = (function() {
     }
     
     function altsyntax(token){
-    	if(token.content==':')
-    		cont(altsyntaxBlock,poplex);
+      if(token.content==':')
+        cont(altsyntaxBlock,poplex);
     }
     
     function altsyntaxBlock(token){
-    	if (token.type == "altsyntaxend") cont(require(';'));
+      if (token.type == "altsyntaxend") cont(require(';'));
       else pass(statement, altsyntaxBlock);
     }
 

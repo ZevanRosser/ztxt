@@ -1,7 +1,6 @@
 $(function() {
 
-
-  z.editableTypes = /.html$|.htm$|.xml$|.csv$|.txt$|.md$|.sql$|.php$|.js$|.json$|css$|.htpasswd$|.htaccess$/;
+  z.editableTypes = /.html$|.htm$|.xml$|.csv$|.txt$|.md$|.sql$|.php$|.js$|.json$|css$|.htpasswd$|.htaccess|.manifest$/;
 
   z.visualTypes = /.html$|.htm$|.php$|\.bc\.php$/;
 

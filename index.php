@@ -12,7 +12,7 @@
     <script src="codemirror/js/codemirror.js" ></script> 
     <script src="codemirror/js/mirrorframe.js" ></script> 
     
-    
+    <script src="custom-zen.js"></script>
     <script src="js/zen_codemirror.js"></script>
     
     <script src="js/beautify.js" ></script> 
