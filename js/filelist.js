@@ -127,6 +127,7 @@ z.FileList = function() {
       return;
     }
     lastLoaded = name;
+    
     if (name.match(z.editableTypes)) {
       z.currentPath = name;
       z.updatePreview();

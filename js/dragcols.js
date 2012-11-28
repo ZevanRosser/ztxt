@@ -19,7 +19,7 @@ z.DragCols = function() {
 
   updateLayout();
   
-  z.win.resize(updateLayout);
+  z.win.resize(updateLayout).trigger("resize");
 
   z.doc.mouseup(function() {
     if (dragging == true) {

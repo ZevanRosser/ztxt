@@ -1,7 +1,9 @@
 $(function() {
 
-  z.editableTypes = /.html$|.htm$|.xml$|.csv$|.txt$|.md$|.sql$|.php$|.js$|.json$|css$|.htpasswd$|.htaccess|.manifest$/;
-
+  $.post("editable-files.txt?", function(data){
+    z.editableTypes = new RegExp(data);
+  });
+  
   z.visualTypes = /.html$|.htm$|.php$|\.bc\.php$/;
 
   z.imageTypes = /.jpg$|.jpeg$|.gif$|.png$/;
