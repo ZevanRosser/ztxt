@@ -22,16 +22,8 @@ z.CodeWin = function() {
     $(".CodeMirror-line-numbers").css("font-size", size);
   });
 
-  $("#autoFormat").click(function() {
-    if (z.currentPath.indexOf(".js") != -1) {
-      var pretty = js_beautify(z.editor.getCode(), {
-        indent_size: 2,
-        preserve_newlines: true
-      });
-      z.editor.setCode(pretty);
-    } else {
-      z.editor.reindent();
-    }
+  $("#autoFormat").click(function() {  
+    z.editor.reindent();
     z.saveFileFolder();
   });
 

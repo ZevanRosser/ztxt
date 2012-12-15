@@ -7,12 +7,13 @@ z.DragCols = function() {
 
   var dragA = makeDrag().insertBefore(z.docMenu);
   dragA.css({
-    left: colA.outerWidth() - 6
+    left: 200
   });
+  //console.log(dragA.css("left"));
 
   var dragB = makeDrag().insertBefore(z.docMenu);
   dragB.css({
-    left: colB.outerWidth() - 6 + colA.outerWidth()
+    left: 700 + 200
   });
 
   var dragLoop;
@@ -60,6 +61,7 @@ z.DragCols = function() {
   function updateLayout() {
     var posA = dragA.position().left;
     var posB = dragB.position().left;
+    
     colA.css({
       width: posA
     });
