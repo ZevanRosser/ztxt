@@ -29,6 +29,11 @@
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/theme.css">
+    <script>
+      $(function(){
+        console.log($("#left-controls").width());
+      });
+    </script>
     <style>
    
     </style>
@@ -47,7 +52,7 @@
     <div id="codeCol">
       <div id="codeUI" class="noSelect">
         <div class="content" id="uiContent">
-          <div class="left">
+          <div class="left" id="left-controls">
             <a id="newBtn" href="#">New</a>
             <a id="autoFormat" href="#">Auto Format</a>
             <a id="findReplaceBtn" href="#">Find and Replace</a>
@@ -63,7 +68,7 @@
             </select>
             
             <div id="color" style="display:inline"><div style="background-color: #000000"></div></div>
-            <a id="customColors" href="#">&#x25c9</a>
+            <a id="customColors" href="#">&#x25c9;</a>
           </div>
           <div class="right">
             
