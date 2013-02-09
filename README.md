@@ -1,8 +1,11 @@
-#Installing
+#Installing ztxt
 -----------
 
 To get up and running with the ztxt editor. 
-[Watch this video.](http://zreference.com/ztxt-code-editor/)  
+[Watch this video.](http://zreference.com/ztxt-code-editor/) 
+
+#What's ztxt?
+ztxt is a browser based code editor. For use mainly with HTML, CSS, JavaScript and PHP. ztxt works best with Chrome or Safari - it does seem to work in Opera and Firefox, but I'm not actively supporting those browsers. 
 
 #Zen Coding:
 ------------
