@@ -29,14 +29,6 @@
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/theme.css">
-    <script>
-      $(function(){
-        console.log($("#left-controls").width());
-      });
-    </script>
-    <style>
-   
-    </style>
     
   </head>
   <body>
