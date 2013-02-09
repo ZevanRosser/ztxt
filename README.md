@@ -13,6 +13,8 @@ Type any of the following followed by a tab:
     z:jquery = html5 document that includes latest version of jquery  
     z:box = html5/jquery with a red absolutely positioned box for demos  
     php = a php tag  
+
+##additional shortcodes
     forj = a javascript for loop  
     forp = a php for loop  
 
@@ -20,7 +22,7 @@ Type any of the following followed by a tab:
 
 
 
-##default shortcuts
+##default editor shortcuts
     Meta+E = Expand Abbreviation;
     Tab = Expand Abbreviation;
     Meta+D = Balance Tag Outward;
