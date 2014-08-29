@@ -10,9 +10,6 @@ if (isset($_REQUEST["dir"])){
   }
 }
 
-//echo $dir . "z";
-
-
 $output = shell_exec('chmod 777 -R ' . $dir);
 
 $index = 0;
@@ -23,10 +20,6 @@ $data = array();
 $files = array_merge(glob("$dir/.htaccess"), glob("$dir/.htpasswd"));
 $files = array_merge(glob("$dir/*"), $files);
 showContents($files, $dir, $data);
-
-/*echo "<pre>";
-print_r($d);
-echo "</pre>";*/
 
 echo "<ul id='documentList'>";
 toList($data);

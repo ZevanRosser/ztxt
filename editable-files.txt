@@ -1,1 +1,1 @@
-\.html$|\.htm$|\.xml$|\.csv$|\.txt$|\.md$|\.sql$|\.php$|\.js$|\.json$|css$|\.htpasswd$|\.htaccess$|\.manifest$|\.svg$|\.pde$|end
+\.html$|\.htm$|\.xml$|\.csv$|\.txt$|\.md$|\.sql$|\.php$|\.js$|\.json$|css$|\.htpasswd$|\.htaccess$|\.manifest$|\.ini$|end

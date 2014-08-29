@@ -3,12 +3,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>ztxt 2.1</title>
+    <title>ztxt 3.3</title>
     
     <link rel="stylesheet" href="css/icons.css" /> 
     <link rel="stylesheet" href="css/modal.css" />
     <link rel="stylesheet" href="css/colorpicker.css" />
-    
+
     <script src="codemirror/js/codemirror.js" ></script> 
     <script src="codemirror/js/mirrorframe.js" ></script> 
     
@@ -44,7 +44,7 @@
     <div id="codeCol">
       <div id="codeUI" class="noSelect">
         <div class="content" id="uiContent">
-          <div class="left" id="left-controls" style="width:438px">
+          <div class="left" id="left-controls">
             <a id="newBtn" href="#">New</a>
             <a id="autoFormat" href="#">Auto Format</a>
             <a id="findReplaceBtn" href="#">Find and Replace</a>

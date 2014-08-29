@@ -7,7 +7,7 @@ body,html{
   text-shadow : 1px 1px 1px rgba(0,0,0,0.5);
 }
 a, a:visited{
-  color : #ccc;
+  color : #c2b77e;
 }
 a:hover{
   color : #87c1fa; 
@@ -40,7 +40,7 @@ li:last-child{
   color : #87c1fa;
 }
 #docMenu li:hover{
-  background-color : #333 !important;
+  background-color : #4f492a !important;
 }
 
 .CodeMirror-wrapping iframe{
@@ -55,11 +55,11 @@ li:last-child{
 }
 
 #fileName{
-  background-color : #444;
+  background-color : #544f37; /*#4a4633;*/
 }
 
 .CodeMirror-line-numbers {
-  color: #AAA;
+  color: #aaa;
   text-align: right;
   font-size: 10pt;
   font-family: monospace;
@@ -115,6 +115,17 @@ select {
 #fontSize{
   margin-top : -4px;
   width : 55px;
+}
+
+#uiContent{
+  background : #4a4633 !important;
+}
+
+#codeCol{
+  background : #544d2c !important; 
+}
+.CodeMirror-line-numbers{
+  background : #635d3d !important;
 }
 
 
