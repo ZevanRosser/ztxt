@@ -1,16 +1,16 @@
-#Installing ztxt
+# Installing ztxt
 -----------
 
 To get up and running with the ztxt editor. 
 [Watch this video.](http://zreference.com/ztxt-code-editor/) 
 
-#What's ztxt?
+# What's ztxt?
 ztxt is a browser based code editor. For use mainly with HTML, CSS, JavaScript and PHP. ztxt works best with Chrome or Safari - it does seem to work in Opera and Firefox, but I'm not actively supporting those browsers. 
 
-#Zen Coding:
+# Zen Coding:
 ------------
 
-##file template shortcodes  
+## file template shortcodes  
 Type any of the following followed by a tab: 
 
     z:html = standard html5 document  
@@ -18,7 +18,7 @@ Type any of the following followed by a tab:
     z:box = html5/jquery with a red absolutely positioned box for demos  
     php = a php tag  
 
-##additional shortcodes
+## additional shortcodes
     forj = a javascript for loop  
     forp = a php for loop  
 
@@ -26,7 +26,7 @@ Type any of the following followed by a tab:
 
 
 
-##default editor shortcuts
+## default editor shortcuts
     Meta+E = Expand Abbreviation;
     Tab = Expand Abbreviation;
     Meta+D = Balance Tag Outward;
