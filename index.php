@@ -66,7 +66,8 @@
             
             <a href="#" id="test">Test</a>
             <a href="#" id="testInTab">Test in Tab</a>
-            <input id="autoTest" type="checkbox" checked/>&nbsp;Auto Test
+            <p>Auto Test</p>
+            <input id="autoTest" type="checkbox" checked/>
           </div>
         </div>
         <div id="fileName">

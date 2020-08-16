@@ -226,3 +226,26 @@ button:hover{
  margin-left : 8px; 
 }
 
+#findBtn{
+  margin-top: -5px !important; 
+}
+
+#replaceBtn{
+  margin-top: -5px !important;
+}
+
+#okBtn{
+  margin-top: -5px !important;
+}
+
+.right p{
+  position: relative;
+  float: right;
+  margin-top: 0px !important;
+}
+
+#autoTest{
+  position: relative;
+  float: right;
+  margin-top: -1px !important;
+}
